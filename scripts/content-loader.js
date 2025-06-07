@@ -6,6 +6,7 @@
 class ContentLoader {
     constructor() {
         this.parser = new MarkdownParser();
+        // Updated base URL to match your repository structure
         this.baseUrl = 'https://raw.githubusercontent.com/mattdho/vibe-coders-guide-to-the-singularity-or-what-to-do-when-the-robots-take-your-job/main/';
         this.currentContent = null;
         this.contentCache = new Map();
@@ -46,10 +47,12 @@ class ContentLoader {
             }
 
             const url = `${this.baseUrl}${filename}`;
+            console.log('Loading content from:', url); // Debug log
+            
             const response = await fetch(url);
 
             if (!response.ok) {
-                throw new Error(`Failed to load ${filename}: ${response.status}`);
+                throw new Error(`Failed to load ${filename}: ${response.status} ${response.statusText}`);
             }
 
             const markdown = await response.text();
@@ -62,7 +65,7 @@ class ContentLoader {
 
         } catch (error) {
             console.error('Error loading content:', error);
-            this.showErrorState(error.message);
+            this.showErrorState(error.message, filename);
         }
     }
 
@@ -100,6 +103,9 @@ class ContentLoader {
 
         // Setup lazy loading for images
         this.setupLazyLoading(contentElement);
+
+        // Announce content change for screen readers
+        this.announceContentChange(filename);
     }
 
     addHeaderIds(container) {
@@ -151,25 +157,33 @@ class ContentLoader {
         // Loading state is replaced by content
     }
 
-    showErrorState(message) {
+    showErrorState(message, filename) {
         const contentElement = document.getElementById('content');
         if (contentElement) {
             contentElement.innerHTML = `
                 <div class="error-state">
                     <h2>404 Error Loading Content</h2>
-                    <p>${message}</p>
+                    <p><strong>File:</strong> ${filename}</p>
+                    <p><strong>Error:</strong> ${message}</p>
                     <p>The requested content could not be found. This might be because:</p>
                     <ul>
                         <li>The file doesn't exist in the repository</li>
                         <li>The file path or name is incorrect</li>
                         <li>There's a network connectivity issue</li>
+                        <li>GitHub's raw content service is temporarily unavailable</li>
                     </ul>
-                    <button class="btn btn-primary" onclick="location.reload()">
-                        Try Again
-                    </button>
-                    <a href="#" class="btn btn-outline" onclick="window.contentLoader.loadContent('00-introduction.md')">
-                        Go to Introduction
-                    </a>
+                    <div class="error-actions">
+                        <button class="btn btn-primary" onclick="location.reload()">
+                            Try Again
+                        </button>
+                        <button class="btn btn-outline" onclick="window.contentLoader.loadContent('00-introduction.md')">
+                            Go to Introduction
+                        </button>
+                        <a href="https://github.com/mattdho/vibe-coders-guide-to-the-singularity-or-what-to-do-when-the-robots-take-your-job" 
+                           class="btn btn-secondary" target="_blank" rel="noopener">
+                            View on GitHub
+                        </a>
+                    </div>
                 </div>
             `;
         }
@@ -206,6 +220,38 @@ class ContentLoader {
                 }
             });
         }
+    }
+
+    announceContentChange(filename) {
+        const title = this.getContentTitle(filename);
+        window.dispatchEvent(new CustomEvent('contentchange', {
+            detail: { message: `Loaded ${title}` }
+        }));
+    }
+
+    getContentTitle(filename) {
+        const titleMap = {
+            '00-introduction.md': 'Introduction',
+            '01-bullshit-jobs-age-of-automation.md': 'Chapter 1: Bullshit Jobs in the Age of Automation',
+            '02-prompt-or-be-prompted.md': 'Chapter 2: Prompt or Be Prompted',
+            '03-myth-of-ai-proof-jobs.md': 'Chapter 3: The Myth of AI-Proof Jobs',
+            '04-resumes-are-for-cowards.md': 'Chapter 4: Resumes Are for Cowards',
+            '05-automate-yourself-before-they-do.md': 'Chapter 5: Automate Yourself Before They Do',
+            '06-side-hustles-are-structural.md': 'Chapter 6: Side Hustles Are Structural',
+            '07-freelance-like-anarchist.md': 'Chapter 7: How to Freelance Like an Anarchist',
+            '08-ai-copilot-isnt-your-friend.md': 'Chapter 8: The AI Co-Pilot Isn\'t Your Friend',
+            '09-build-publicly-share-loudly.md': 'Chapter 9: Build Publicly, Share Loudly',
+            '10-networked-work-decentralized-survival.md': 'Chapter 10: Networked Work, Decentralized Survival',
+            '11-The-End-of-Work-Is-Not-the-End-of-You.md': 'Chapter 11: The End of Work Is Not the End of You',
+            '12-fully-automated-vibe-collectivism.md': 'Chapter 12: Fully Automated Vibe Collectivism',
+            'outro.md': 'Outro',
+            'appendix-a-tools.md': 'Appendix A: Tools to Learn Right Now',
+            'appendix-b-prompts.md': 'Appendix B: Claude/GPT Prompt Library',
+            'appendix-c-jobs-that-suck.md': 'Appendix C: Jobs That Will Still Suck in 2040',
+            'bibliography.md': 'Bibliography'
+        };
+        
+        return titleMap[filename] || filename.replace('.md', '').replace(/-/g, ' ');
     }
 
     downloadFile(format) {
@@ -307,6 +353,36 @@ class ContentLoader {
             this.loadContent(filename);
         }
     }
+
+    // Test content loading with better error handling
+    async testContentLoading() {
+        console.log('Testing content loading...');
+        
+        const testFiles = [
+            '00-introduction.md',
+            '01-bullshit-jobs-age-of-automation.md',
+            '02-prompt-or-be-prompted.md'
+        ];
+
+        for (const file of testFiles) {
+            try {
+                const url = `${this.baseUrl}${file}`;
+                console.log(`Testing: ${url}`);
+                
+                const response = await fetch(url);
+                console.log(`${file}: ${response.status} ${response.statusText}`);
+                
+                if (response.ok) {
+                    const content = await response.text();
+                    console.log(`${file}: ${content.length} characters loaded`);
+                } else {
+                    console.error(`${file}: Failed to load`);
+                }
+            } catch (error) {
+                console.error(`${file}: Error -`, error);
+            }
+        }
+    }
 }
 
 // Initialize content loader
@@ -320,4 +396,11 @@ window.addEventListener('popstate', (event) => {
 // Initialize from URL on page load
 document.addEventListener('DOMContentLoaded', () => {
     window.contentLoader.initializeFromURL();
+    
+    // Test content loading in development
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        setTimeout(() => {
+            window.contentLoader.testContentLoading();
+        }, 1000);
+    }
 });

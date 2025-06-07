@@ -166,6 +166,58 @@ pre code {
   padding: 0;
 }
 
+/* Code Block Styles */
+.code-block {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 0.5rem;
+  margin: var(--space-lg) 0;
+  overflow: hidden;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-primary);
+  font-size: var(--font-size-sm);
+}
+
+.code-language {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.copy-button {
+  background: none;
+  border: 1px solid var(--border-primary);
+  border-radius: 0.25rem;
+  padding: var(--space-xs);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.copy-button:hover {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--accent-primary);
+}
+
+.code-block pre {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
 /* Loading Screen */
 .loading-screen {
   position: fixed;
@@ -209,6 +261,42 @@ pre code {
   font-family: var(--font-mono);
   color: var(--text-secondary);
   margin: 0;
+}
+
+/* Error State */
+.error-state {
+  text-align: center;
+  padding: var(--space-3xl) var(--space-md);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-state h2 {
+  color: #ff6b6b;
+  margin-bottom: var(--space-lg);
+}
+
+.error-state p {
+  margin-bottom: var(--space-md);
+}
+
+.error-state ul {
+  text-align: left;
+  margin: var(--space-lg) 0;
+  padding-left: var(--space-xl);
+}
+
+.error-state li {
+  margin-bottom: var(--space-sm);
+  color: var(--text-secondary);
+}
+
+.error-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-xl);
 }
 
 /* Header */
@@ -728,6 +816,7 @@ pre code {
 .function { color: #50FA7B; }
 .string { color: #F1FA8C; }
 .comment { color: #6272A4; }
+.number { color: #BD93F9; }
 
 /* Content */
 .content {
@@ -905,6 +994,16 @@ pre code {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xl);
     padding: var(--space-2xl) var(--space-md) var(--space-xl);
+  }
+
+  .error-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .error-actions .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 
