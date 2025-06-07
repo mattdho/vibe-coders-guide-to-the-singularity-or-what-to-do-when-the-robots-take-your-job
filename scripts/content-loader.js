@@ -6,7 +6,7 @@
 class ContentLoader {
     constructor() {
         this.parser = new MarkdownParser();
-        this.baseUrl = 'https://raw.githubusercontent.com/vibecoders/singularity-guide/main/';
+        this.baseUrl = 'https://raw.githubusercontent.com/mattdho/vibe-coders-guide-to-the-singularity-or-what-to-do-when-the-robots-take-your-job/main/';
         this.currentContent = null;
         this.contentCache = new Map();
         this.setupEventListeners();
@@ -156,11 +156,20 @@ class ContentLoader {
         if (contentElement) {
             contentElement.innerHTML = `
                 <div class="error-state">
-                    <h2>Error Loading Content</h2>
+                    <h2>404 Error Loading Content</h2>
                     <p>${message}</p>
+                    <p>The requested content could not be found. This might be because:</p>
+                    <ul>
+                        <li>The file doesn't exist in the repository</li>
+                        <li>The file path or name is incorrect</li>
+                        <li>There's a network connectivity issue</li>
+                    </ul>
                     <button class="btn btn-primary" onclick="location.reload()">
                         Try Again
                     </button>
+                    <a href="#" class="btn btn-outline" onclick="window.contentLoader.loadContent('00-introduction.md')">
+                        Go to Introduction
+                    </a>
                 </div>
             `;
         }
@@ -202,8 +211,8 @@ class ContentLoader {
     downloadFile(format) {
         // In a real implementation, these would be actual download links
         const downloads = {
-            pdf: 'https://github.com/vibecoders/singularity-guide/releases/download/latest/vibe-coders-guide.pdf',
-            epub: 'https://github.com/vibecoders/singularity-guide/releases/download/latest/vibe-coders-guide.epub'
+            pdf: 'https://github.com/mattdho/vibe-coders-guide-to-the-singularity-or-what-to-do-when-the-robots-take-your-job/releases/download/latest/vibe-coders-guide.pdf',
+            epub: 'https://github.com/mattdho/vibe-coders-guide-to-the-singularity-or-what-to-do-when-the-robots-take-your-job/releases/download/latest/vibe-coders-guide.epub'
         };
 
         if (downloads[format]) {
@@ -243,7 +252,7 @@ class ContentLoader {
                             </svg>
                             Download EPUB
                         </a>
-                        <a href="https://github.com/vibecoders/singularity-guide/archive/main.zip" class="btn btn-outline">
+                        <a href="https://github.com/mattdho/vibe-coders-guide-to-the-singularity-or-what-to-do-when-the-robots-take-your-job/archive/main.zip" class="btn btn-outline">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                             </svg>
