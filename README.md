@@ -1,0 +1,1 @@
+# vibe-coders-guide-to-the-singularity-or-what-to-do-when-the-robots-take-your-job
