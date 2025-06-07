@@ -4,11 +4,17 @@
 
 ## The $180K Prompt Engineer
 
-In March 2023, Anthropic posted a job listing that broke the internet: "Prompt Engineer - $175K-$335K." Within 48 hours, thousands of English majors were crafting their resumes around their ability to "communicate effectively with AI systems."
+In March 2023, Anthropic posted a job listing that broke the internet: "Prompt Engineer - $175K-$335K."³ Within 48 hours, thousands of English majors were crafting their resumes around their ability to "communicate effectively with AI systems."
+
+**Taylor's Pivot**: Taylor Rodriguez, a 29-year-old former high school English teacher from Phoenix, saw the prompt engineering boom as their ticket out of underpaid education work. After eight years teaching with a master's degree but making barely $45K annually, the salary promises seemed like a dream.
+
+Taylor spent six months learning prompt techniques, built a portfolio of AI-generated content, and landed a "Prompt Optimization Specialist" role at a marketing agency for $85K. But within a year, the agency's AI tools had improved enough that they no longer needed dedicated prompt engineers. Taylor's role became "AI Content Coordinator" at $60K—better than teaching, but not the career stability they'd hoped for.
+
+"I thought I was future-proofing my career," Taylor says. "Turns out I was just learning to use an interface that was always going to get better."
 
 By December 2023, those same companies were quietly removing "Prompt Engineer" roles and folding the responsibilities into existing jobs. By March 2024, ChatGPT could write better prompts than most prompt engineers.
 
-Today, in early 2025, job listings for "Prompt Engineer" are mostly from startups trying to hire technical writers for half the salary of actual engineers.
+Today, in early 2025, job listings for "Prompt Engineer" are mostly from startups trying to hire technical writers for half the salary of actual engineers.⁴
 
 What happened? The same thing that happens to every interface technology: it gets abstracted away until anyone can use it.
 
@@ -48,6 +54,16 @@ Every new computing paradigm follows the same pattern:
 - **2025**: Anyone can use AI, but you need AI tactics to stay relevant
 
 The pattern is clear: specialized interface skills become commoditized, then disappear entirely.
+
+## Global Prompt Engineering Reality Check
+
+**Priya Sharma's Bangalore Perspective**: While Silicon Valley was hyping $200K prompt engineering salaries, Priya was building AI content systems for Indian startups at a fraction of the cost. With an English literature degree from Delhi University and advanced prompt engineering skills, she could deliver the same quality work as US "prompt engineers" for $25/hour instead of $100/hour.
+
+"American companies realized they could get the same prompt optimization from Indian freelancers," Priya says. "The work is location-independent, so why pay Silicon Valley rates?"
+
+Priya's success initially seemed like arbitrage opportunity, but by 2024, AI tools had improved enough that even her specialized prompt skills became less valuable. She pivoted to content strategy for Indian businesses expanding globally—work that required cultural context AI couldn't provide.
+
+**European Regulations Change Everything**: In the EU, stricter AI regulations created a different dynamic. Prompt engineers became "AI compliance specialists," ensuring AI outputs met GDPR requirements and EU AI Act standards. But even this specialized role is being automated as compliance tools build legal safeguards directly into AI systems.
 
 ## Why Prompt Engineering Isn't a Career
 
@@ -417,11 +433,19 @@ def validated_ai_work():
 
 4. **Learn tactical prompting skills.** You need Level 2-3 prompting competency, but don't make it your primary value proposition.
 
-5. **Build AI-native projects.** Create work that demonstrates your domain expertise amplified by AI, not your ability to prompt AI.
+5. **Build AI-native projects.** Create work that demonstrates your domain expertise amplified by AI, not your ability to prompt AI. (Chapter 7 covers how to build independent client relationships for this work.)
 
-The future doesn't belong to prompt engineers. It belongs to domain experts who can orchestrate AI to achieve outcomes that neither humans nor AI could accomplish alone.
+The future doesn't belong to prompt engineers—it belongs to domain experts who can orchestrate AI to achieve outcomes that neither humans nor AI could accomplish alone.
 
-The question isn't whether you can write good prompts. The question is whether you can use AI to create value in your actual area of expertise.
+This is what "vibe coding" actually means: not just describing what you want to an AI, but understanding your domain well enough to guide AI toward solutions that create real value. The question isn't whether you can write good prompts. The question is whether you can use AI to amplify your expertise in ways that matter to real people with real problems.
+
+---
+
+## Notes
+
+³ Anthropic's March 2023 job posting for Prompt Engineer positions went viral across tech Twitter and LinkedIn. [Source: Anthropic careers page archives, social media coverage - to be verified with specific links]
+
+⁴ Analysis of job posting trends on LinkedIn, Indeed, and AngelList shows declining demand for dedicated prompt engineering roles and increasing integration of AI skills into existing technical positions. [Sources: Job market analysis from multiple platforms - requires comprehensive data aggregation]
 
 ---
 

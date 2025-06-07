@@ -312,15 +312,27 @@ def design_tech_democracy_policies():
 
 ### The Political Coalition
 
+**Global Movements Taking Shape**: The struggle for democratic technology isn't limited to the US. Different countries are experimenting with different approaches:
+
+**South Korea's Digital New Deal**: Seoul has invested $13.4 billion in AI and 5G infrastructure while requiring that AI systems be auditable and include worker retraining programs. Korean tech workers have organized successful campaigns for "AI transparency" in hiring algorithms.
+
+**European Tech Regulation**: The EU AI Act represents the world's first comprehensive AI regulation, requiring risk assessments and human oversight for high-risk AI systems. European tech cooperatives like Fairphone and platform cooperatives like CoopCycle provide working models for democratic technology ownership.
+
+**Latin American Digital Sovereignty**: Countries like Brazil and Mexico are developing "digital sovereignty" policies that require tech platforms to store data locally and pay taxes on local revenue. Brazilian tech workers have organized mutual aid networks to support those displaced by automation.
+
+**African Leapfrog Strategies**: African countries are building AI capacity that serves local needs rather than just extracting data for Global North companies. Kenya's iHub and Nigeria's tech ecosystem focus on solving local problems with technology owned by local communities.
+
 ```python
-# Who would support technological democracy
+# Who would support technological democracy globally
 def build_political_coalition():
     core_constituencies = {
-        "displaced_workers": "People losing jobs to automation",
-        "gig_workers": "People exploited by platform capitalism", 
+        "displaced_workers": "People losing jobs to automation globally",
+        "gig_workers": "People exploited by platform capitalism worldwide", 
         "tech_workers": "People who understand the technology and its impacts",
         "environmentalists": "People concerned about sustainable technology",
-        "civil_libertarians": "People worried about surveillance and privacy"
+        "civil_libertarians": "People worried about surveillance and privacy",
+        "global_south_communities": "People fighting digital colonialism",
+        "indigenous_groups": "People protecting traditional knowledge from AI extraction"
     }
     
     coalition_building_strategies = {

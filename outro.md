@@ -132,6 +132,10 @@ The singularity isn't coming—it's here. The question isn't whether you can ada
 
 Learn to vibe or learn to code (again). But whatever you do, do it together.
 
+*"Vibe coding"* started as Andrej Karpathy's term for describing what you want while AI handles implementation. We've expanded it into *vibe everything*—describing the world you want while building the power to create it.
+
+The robots already took your job. Now let's take back the future.
+
 The future is fully automated. Whether it serves human flourishing or corporate extraction depends on what you do next.
 
 Your move.

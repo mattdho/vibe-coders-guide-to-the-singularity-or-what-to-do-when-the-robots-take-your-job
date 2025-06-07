@@ -26,7 +26,9 @@ The singularity isn't coming. It's here. Your LinkedIn feed is full of layoff an
 
 ### The Vibe
 
-Think David Graeber meets The Pragmatic Programmer, with a Python script in one hand and a pink slip in the other. We're not here to sugarcoat anything, but we're also not here to panic. We're here to adapt, automate, and maybe build something better in the process.
+Think David Graeber meets The Pragmatic Programmer, with a Python script in one hand and a pink slip in the other. "Vibe coding"—Andrej Karpathy's term for AI-assisted development where you describe what you want while AI handles the implementation—captures part of what we're doing here. But we're taking it further: vibe everything. Vibe your career, vibe your independence, vibe your way out of wage labor entirely.
+
+We're not here to sugarcoat anything, but we're also not here to panic. We're here to adapt, automate, and maybe build something better in the process.
 
 ---
 
