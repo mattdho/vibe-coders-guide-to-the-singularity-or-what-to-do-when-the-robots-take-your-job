@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vibe Coders' Guide to the Singularity</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A tactical, subversive survival guide for coders, creatives, freelancers, and technologists navigating the AI-driven collapse of traditional jobs, workflows, and industries.">
+    <meta name="keywords" content="coding, AI, singularity, programming, future of work, automation, freelancing, technology">
+    <meta name="author" content="The Vibe Coders' Guide">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vibecoders.github.io/singularity-guide/">
+    <meta property="og:title" content="The Vibe Coders' Guide to the Singularity">
+    <meta property="og:description" content="What to do when the robots take your job - A practical field guide for surviving the AI revolution">
+    <meta property="og:image" content="https://vibecoders.github.io/singularity-guide/assets/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vibecoders.github.io/singularity-guide/">
+    <meta property="twitter:title" content="The Vibe Coders' Guide to the Singularity">
+    <meta property="twitter:description" content="What to do when the robots take your job - A practical field guide for surviving the AI revolution">
+    <meta property="twitter:image" content="https://vibecoders.github.io/singularity-guide/assets/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "The Vibe Coders' Guide to the Singularity",
+        "alternateName": "What to Do When the Robots Take Your Job",
+        "author": {
+            "@type": "Organization",
+            "name": "The Vibe Coders Collective"
+        },
+        "description": "A tactical, subversive survival guide for coders, creatives, freelancers, and technologists navigating the AI-driven collapse of traditional jobs, workflows, and industries.",
+        "genre": "Technology, Career Development, Economics",
+        "inLanguage": "en-US",
+        "url": "https://vibecoders.github.io/singularity-guide/",
+        "datePublished": "2025",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Open Source Publishing"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Initializing vibe protocols...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-content">
+            <div class="header-left">
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo">
+                    <h1 class="logo-text">
+                        <span class="logo-main">Vibe Coders'</span>
+                        <span class="logo-sub">Guide to the Singularity</span>
+                    </h1>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div class="download-buttons">
+                    <a href="#" class="btn btn-primary" id="download-pdf">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        PDF
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="download-epub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                        EPUB
+                    </a>
+                    <a href="https://github.com/vibecoders/singularity-guide" class="btn btn-outline" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+                
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <svg class="theme-icon theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                    <svg class="theme-icon theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Progress Bar -->
+        <div class="progress-bar" id="progress-bar"></div>
+    </header>
+
+    <!-- Living Document Notice -->
+    <div class="notice" id="living-notice">
+        <div class="notice-content">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            <span>This is a living document. Content is updated regularly based on the rapidly evolving AI landscape.</span>
+            <button class="notice-close" aria-label="Close notice">&times;</button>
+        </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <div class="toc-header">
+                    <h3>Table of Contents</h3>
+                    <button class="toc-collapse" id="toc-collapse" aria-label="Collapse all sections">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <nav class="toc" id="toc">
+                    <!-- Table of contents will be generated dynamically -->
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" id="main-content">
+            <div class="content-wrapper">
+                <!-- Hero Section -->
+                <section class="hero" id="hero">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="title-main">The Vibe Coders'</span>
+                            <span class="title-sub">Guide to the Singularity</span>
+                            <span class="title-subtitle">Or: What to Do When the Robots Take Your Job</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            A tactical, subversive survival guide for coders, creatives, freelancers, and technologists 
+                            navigating the AI-driven collapse of traditional jobs, workflows, and industries.
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Chapters</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Appendices</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">Vibes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-large" id="start-reading">
+                                Start Reading
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9,18 15,12 9,6"/>
+                                </svg>
+                            </button>
+                            <button class="btn btn-outline btn-large" id="download-all">
+                                Download All Formats
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="code-title">future.py</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code><span class="keyword">def</span> <span class="function">survive_singularity</span>():
+    <span class="keyword">if</span> robots_took_your_job():
+        <span class="keyword">return</span> <span class="string">"learn_to_vibe()"</span>
+    <span class="keyword">else</span>:
+        <span class="keyword">return</span> <span class="string">"automate_yourself_first()"</span>
+
+<span class="comment"># The robots already won.</span>
+<span class="comment"># Time to change the game.</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Content Area -->
+                <article class="content" id="content">
+                    <!-- Content will be loaded dynamically -->
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>The Book</h4>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#table-of-contents">Table of Contents</a></li>
+                    <li><a href="#bibliography">Bibliography</a></li>
+                    <li><a href="https://github.com/vibecoders/singularity-guide" target="_blank" rel="noopener">Source Code</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="https://discord.gg/vibecoders" target="_blank" rel="noopener">Discord</a></li>
+                    <li><a href="https://twitter.com/vibecoders" target="_blank" rel="noopener">Twitter</a></li>
+                    <li><a href="https://reddit.com/r/vibecoders" target="_blank" rel="noopener">Reddit</a></li>
+                    <li><a href="mailto:hello@vibecoders.dev">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="https://ko-fi.com/vibecoders" target="_blank" rel="noopener">Buy us a coffee</a></li>
+                    <li><a href="https://github.com/sponsors/vibecoders" target="_blank" rel="noopener">GitHub Sponsors</a></li>
+                    <li><a href="#contribute">Contribute</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#license">CC0 License</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Use</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Vibe Coders Collective. Released under CC0 License.</p>
+            <p>Built with ❤️ and excessive amounts of caffeine.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/markdown-parser.js"></script>
+    <script src="scripts/content-loader.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
