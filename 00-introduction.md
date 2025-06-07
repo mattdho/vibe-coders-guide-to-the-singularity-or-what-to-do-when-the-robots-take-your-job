@@ -173,3 +173,4 @@ The next wave of layoffs is coming, and this time they won't blame it on 'market
 *Ready to get tactical? Let's start with why your job was always more fragile than you thought.*
 
 → **Next: Chapter 1 - Bullshit Jobs in the Age of Automation** 
+
