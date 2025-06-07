@@ -1,0 +1,30 @@
+{
+  "name": "vibe-coders-guide",
+  "version": "1.0.0",
+  "description": "A modern single-page website for the Vibe Coders' Guide to the Singularity book",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Build complete - static files ready'",
+    "start": "python -m http.server 8000",
+    "preview": "python -m http.server 8000"
+  },
+  "keywords": [
+    "coding",
+    "AI",
+    "singularity",
+    "programming",
+    "future-of-work",
+    "book",
+    "guide"
+  ],
+  "author": "Vibe Coders",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vibe-coders-guide.git"
+  },
+  "homepage": "https://your-username.github.io/vibe-coders-guide",
+  "devDependencies": {},
+  "dependencies": {}
+}
