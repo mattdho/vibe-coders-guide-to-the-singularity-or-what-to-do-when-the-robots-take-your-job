@@ -58,7 +58,7 @@ But platform algorithms and client biases worked against him. Despite excellent 
 
 James eventually built his own client base through GitHub contributions and tech community involvement, but the transition took two years and required resources many freelancers don't have.
 
-**European Cooperative Response**: In contrast, European developers have experimented with platform cooperatives like CoopCycle and Stocksy, where freelancers own equity in the platforms they use. These models redistribute profits to workers rather than extracting value for external shareholders.
+**European Cooperative Response**: In contrast, European developers have experimented with platform cooperatives like CoopCycle and Stocksy, where freelancers own equity in the platforms they use. These models redistribute profits to workers rather than extract value for external shareholders.
 
 However, cooperative platforms struggle to compete with venture-capital-funded platforms that can operate at losses to gain market share.
 

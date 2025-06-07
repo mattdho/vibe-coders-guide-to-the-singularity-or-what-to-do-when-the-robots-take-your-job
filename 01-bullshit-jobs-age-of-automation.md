@@ -12,13 +12,13 @@ Not just the slides—entire market research reports, competitor analyses, custo
 
 Mike's still employed. His team isn't.
 
-Now Mike spends his days prompting AI to create the same deliverables he used to create manually, attending meetings about "AI integration strategy," and updating his LinkedIn profile with buzzwords like "AI-augmented marketing professional."
+Now Mike spends his days prompting AI to create the same deliverables he used to create manually, attending meetings about 'AI integration strategy,' and updating his LinkedIn profile with buzzwords like 'AI-augmented marketing professional.'
 
 The cruel irony? Mike's job was always bullshit. AI just made it obvious.
 
 ## What Graeber Saw Coming
 
-David Graeber died in 2020, before AI could automate his email responses. But his analysis of "bullshit jobs" predicted exactly what we're seeing now: an economy full of roles that exist primarily to justify their own existence, suddenly exposed when machines can do the same pointless work faster and cheaper.⁵
+David Graeber died in 2020, before AI could automate his email responses. But his analysis of 'bullshit jobs' predicted exactly what we're seeing now: an economy full of roles that exist primarily to justify their own existence, suddenly exposed when machines can do the same pointless work faster and cheaper.⁵
 
 Graeber identified five types of bullshit jobs:⁶
 
@@ -34,9 +34,9 @@ Let's see how each category is getting automated:
 
 ### Flunkies: The Executive Assistant Apocalypse
 
-**Maria's Story**: Maria had been an executive assistant at a Fortune 500 company for 15 years. At 48, she managed calendars for three VPs, coordinated international travel, and took detailed meeting notes. She thought her job was secure because it required "human touch" and relationship management.
+**Maria's Story**: Maria had been an executive assistant at a Fortune 500 company for 15 years. At 48, she managed calendars for three VPs, coordinated international travel, and took detailed meeting notes. She thought her job was secure because it required 'human touch' and relationship management.
 
-Then her company implemented AI scheduling tools and automated expense reporting. Within six months, Maria's role was "restructured" to support eight executives instead of three, with AI handling most of the routine work. Her salary stayed the same, but her stress levels tripled.
+Then her company implemented AI scheduling tools and automated expense reporting. Within six months, Maria's role was 'restructured' to support eight executives instead of three, with AI handling most of the routine work. Her salary stayed the same, but her stress levels tripled.
 
 **What they used to do:**
 - Schedule meetings
@@ -66,15 +66,15 @@ rental car not needed. Create itinerary with backup options.
 
 **The reality:** Executive assistants are being replaced by AI scheduling tools, automated expense software, and executives who finally learned to use their own calendars.
 
-**Who's left:** A few high-level EAs who do actual strategic work. Everyone else is now "office operations specialists" making $15/hour instead of $45/hour.
+**Who's left:** A few high-level EAs who do actual strategic work. Everyone else is now 'office operations specialists' making $15/hour instead of $45/hour.
 
 ### Goons: Sales Development Representatives
 
 **Jamal's Reality Check**: Jamal, a 24-year-old recent college graduate, took an SDR role at a fintech startup thinking it was his entry point into sales. Fresh out of Howard University with a business degree, he was eager to prove himself in tech.
 
-Six months in, his manager introduced "AI-powered outreach tools" that could personalize cold emails at scale. What used to take Jamal's team of five people a full day now took one person an hour. Four of his teammates were laid off. Jamal kept his job but now competes with AI-generated content for prospect attention.
+Six months in, his manager introduced 'AI-powered outreach tools' that could personalize cold emails at scale. What used to take Jamal's team of five people a full day now took one person an hour. Four of his teammates were laid off. Jamal kept his job but now competes with AI-generated content for prospect attention.
 
-"I spend more time training the AI than actually selling," Jamal says. "And I know it's getting better at my job every week."
+'I spend more time training the AI than actually selling,' Jamal says. 'And I know it's getting better at my job every week.'
 
 **What they used to do:**
 - Send cold emails
@@ -106,9 +106,9 @@ Rate qualification 1-10 and explain reasoning.
 """
 ```
 
-**The reality:** Sales development is becoming "AI prompt optimization." One person with good prompts can do the work of an entire SDR team.
+**The reality:** Sales development is becoming 'AI prompt optimization.' One person with good prompts can do the work of an entire SDR team.
 
-**Who's left:** Senior account executives who close deals in person. Junior SDRs are being replaced by "AI-augmented" teams of 2-3 people doing the work of 20.
+**Who's left:** Senior account executives who close deals in person. Junior SDRs are being replaced by 'AI-augmented' teams of 2-3 people doing the work of 20.
 
 ### Duct-Tapers: The DevOps Middle Management
 
@@ -143,7 +143,7 @@ testing requirements, and deployment considerations.
 
 **The reality:** Most project management is becoming automated workflow management. AI can track progress, identify blockers, and generate reports without human intervention.
 
-**Who's left:** Technical project managers who write code. Everyone else is now "Agile coaches" making consulting rates instead of salaries.
+**Who's left:** Technical project managers who write code. Everyone else is now 'Agile coaches' making consulting rates instead of salaries.
 
 ### Box-Tickers: Compliance and Documentation
 
@@ -151,7 +151,7 @@ testing requirements, and deployment considerations.
 
 Then the hospital implemented AI-powered documentation systems that could automatically generate compliance reports, track audit trails, and flag potential violations in real-time. Dr. Chen's careful, detail-oriented work was suddenly replaceable by software that never got tired or made transcription errors.
 
-"I used to catch things that could cost the hospital millions in fines," she says. "Now the AI catches more violations than I ever could, and it works 24/7."
+'I used to catch things that could cost the hospital millions in fines,' she says. 'Now the AI catches more violations than I ever could, and it works 24/7.'
 
 **What they used to do:**
 - Write documentation
@@ -183,7 +183,7 @@ and data subject rights procedures.
 
 **The reality:** AI can generate most documentation faster and more accurately than humans. It never gets bored, never procrastinates, and always follows templates.
 
-**Who's left:** Senior compliance officers who interpret regulations. Technical writers are becoming "AI documentation specialists."
+**Who's left:** Senior compliance officers who interpret regulations. Technical writers are becoming 'AI documentation specialists.'
 
 ### Taskmasters: Middle Managers Everywhere
 
@@ -219,7 +219,7 @@ Create 360-degree review with development recommendations.
 
 **The reality:** Most middle management tasks can be automated or eliminated. AI can track productivity, assign work, and even generate performance feedback.
 
-**Who's left:** People managers who actually develop talent and technical managers who ship code. Everyone else is being "reorganized" out of existence.
+**Who's left:** People managers who actually develop talent and technical managers who ship code. Everyone else is being 'reorganized' out of existence.
 
 ## The Automation Hierarchy
 
@@ -292,7 +292,7 @@ These roles feel important because they're new and AI-adjacent. But they're foll
 
 GPT-5 will write better prompts than most prompt engineers. Computer vision will eliminate most data labeling work. Ethics compliance will become automated safeguards built into AI development workflows.
 
-The cruel irony? These new bullshit jobs often pay less and have worse benefits than the jobs they replaced, while requiring workers to participate in automating themselves out of existence.
+The cruel irony? These new bullshit jobs often pay less and offer worse benefits than the jobs they replaced, while requiring workers to participate in automating themselves out of existence.
 
 ## Why This Matters for Your Strategy
 
@@ -322,7 +322,7 @@ Make a list of everything you do in a typical week. For each item, ask:
 Anything that gets four "no" answers is bullshit work that can be automated.
 
 ### 2. Automate Your Own Bullshit
-Before they automate you, automate the parts of your job that don't require human judgment (we'll cover specific automation tactics in Chapter 5):
+Before they automate you, automate the parts of your job that don't require human judgment. (We'll cover specific automation tactics in Chapter 5.)
 
 ```python
 # Example: Automate weekly status reports

@@ -69,6 +69,7 @@ automation_actions = [
 ```python
 # Example: Automated technical documentation
 def generate_docs(codebase_changes):
+    """Generate documentation based on codebase changes."""
     context = get_recent_commits() + get_existing_docs()
     
     prompt = f"""
@@ -627,7 +628,7 @@ def robust_automation(input_data):
 
 5. **Build a "digital twin"** that can handle your most routine communications. Train it on your writing style and preferences.
 
-The goal isn't to automate everything—it's to automate the boring stuff so you have time and energy for work that actually matters. This is the personal implementation of "vibe coding": you describe what needs to happen, AI handles the execution, and you focus on the outcomes that require human judgment.
+The goal isn't to automate everything—it's to automate the boring stuff so you have time and energy for work that actually matters. This is the personal implementation of *vibe coding*: you describe what needs to happen, AI handles the execution, and you focus on the outcomes that require human judgment.
 
 When your company starts automating jobs, you want to be the person who's already automated their own boring tasks and moved up to strategic work. You want to be the one directing the automation, not getting replaced by it.
 

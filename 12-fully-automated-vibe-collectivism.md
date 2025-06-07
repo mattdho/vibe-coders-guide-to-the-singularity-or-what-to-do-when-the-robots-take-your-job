@@ -18,9 +18,9 @@ They proved Aaron Bastani's central thesis: the problem isn't automation itself�
 
 The first eleven chapters of this book focused on individual strategies: how *you* can automate yourself, build side hustles, freelance independently, and prepare for a post-work world.
 
-But individual tactics, no matter how clever, can't solve systemic problems. If AI is going to displace millions of workers, "learn to code" isn't going to save everyone. If platform capitalism is extracting value from creators, building your own audience won't fix the underlying extraction.
+But individual tactics, no matter how clever, can't solve systemic problems. If AI is going to displace millions of workers, 'learn to code' isn't going to save everyone. If platform capitalism is extracting value from creators, building your own audience won't fix the underlying extraction.
 
-As Nick Srnicek and Alex Williams argue in *Inventing the Future*, we need to move beyond "folk politics"—the idea that small-scale, local, individual actions can address large-scale systemic problems.
+As Nick Srnicek and Alex Williams argue in *Inventing the Future*, we need to move beyond 'folk politics'—the idea that small-scale, local, individual actions can address large-scale systemic problems.
 
 ### The Limits of Individual Solutions
 

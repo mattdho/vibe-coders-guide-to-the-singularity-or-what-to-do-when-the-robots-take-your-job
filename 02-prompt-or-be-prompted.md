@@ -8,13 +8,13 @@ In March 2023, Anthropic posted a job listing that broke the internet: "Prompt E
 
 **Taylor's Pivot**: Taylor Rodriguez, a 29-year-old former high school English teacher from Phoenix, saw the prompt engineering boom as their ticket out of underpaid education work. After eight years teaching with a master's degree but making barely $45K annually, the salary promises seemed like a dream.
 
-Taylor spent six months learning prompt techniques, built a portfolio of AI-generated content, and landed a "Prompt Optimization Specialist" role at a marketing agency for $85K. But within a year, the agency's AI tools had improved enough that they no longer needed dedicated prompt engineers. Taylor's role became "AI Content Coordinator" at $60K—better than teaching, but not the career stability they'd hoped for.
+Taylor spent six months learning prompt techniques, built a portfolio of AI-generated content, and landed a 'Prompt Optimization Specialist' role at a marketing agency for $85K. But within a year, the agency's AI tools had improved enough that they no longer needed dedicated prompt engineers. Taylor's role became 'AI Content Coordinator' at $60K—better than teaching, but not the career stability they'd hoped for.
 
-"I thought I was future-proofing my career," Taylor says. "Turns out I was just learning to use an interface that was always going to get better."
+'I thought I was future-proofing my career,' Taylor says. 'Turns out I was just learning to use an interface that was always going to get better.'
 
-By December 2023, those same companies were quietly removing "Prompt Engineer" roles and folding the responsibilities into existing jobs. By March 2024, ChatGPT could write better prompts than most prompt engineers.
+By December 2023, those same companies were quietly removing 'Prompt Engineer' roles and folding the responsibilities into existing jobs. By March 2024, ChatGPT could write better prompts than most prompt engineers.
 
-Today, in early 2025, job listings for "Prompt Engineer" are mostly from startups trying to hire technical writers for half the salary of actual engineers.⁴
+Today, in early 2025, job listings for 'Prompt Engineer' are mostly from startups trying to hire technical writers for significantly less than traditional engineering salaries.⁴
 
 What happened? The same thing that happens to every interface technology: it gets abstracted away until anyone can use it.
 
@@ -57,13 +57,13 @@ The pattern is clear: specialized interface skills become commoditized, then dis
 
 ## Global Prompt Engineering Reality Check
 
-**Priya Sharma's Bangalore Perspective**: While Silicon Valley was hyping $200K prompt engineering salaries, Priya was building AI content systems for Indian startups at a fraction of the cost. With an English literature degree from Delhi University and advanced prompt engineering skills, she could deliver the same quality work as US "prompt engineers" for $25/hour instead of $100/hour.
+**Priya Sharma's Bangalore Perspective**: While Silicon Valley was hyping $200K prompt engineering salaries, Priya was building AI content systems for Indian startups at a fraction of the cost. With an English literature degree from Delhi University and advanced prompt engineering skills, she could deliver the same quality work as US 'prompt engineers' for $25/hour instead of $100/hour.
 
-"American companies realized they could get the same prompt optimization from Indian freelancers," Priya says. "The work is location-independent, so why pay Silicon Valley rates?"
+'American companies realized they could get the same prompt optimization from Indian freelancers,' Priya says. 'The work is location-independent, so why pay Silicon Valley rates?'
 
 Priya's success initially seemed like arbitrage opportunity, but by 2024, AI tools had improved enough that even her specialized prompt skills became less valuable. She pivoted to content strategy for Indian businesses expanding globally—work that required cultural context AI couldn't provide.
 
-**European Regulations Change Everything**: In the EU, stricter AI regulations created a different dynamic. Prompt engineers became "AI compliance specialists," ensuring AI outputs met GDPR requirements and EU AI Act standards. But even this specialized role is being automated as compliance tools build legal safeguards directly into AI systems.
+**European Regulations Change Everything**: In the EU, stricter AI regulations created a different dynamic. Prompt engineers became 'AI compliance specialists,' ensuring AI outputs met GDPR requirements and EU AI Act standards. But even this specialized role is being automated as compliance tools build legal safeguards directly into AI systems.
 
 ## Why Prompt Engineering Isn't a Career
 
@@ -95,7 +95,7 @@ Please think step by step and explain your approach.
 prompt_2025 = "Clean this CSV file and return as DataFrame"
 ```
 
-The AI got better at understanding intent. The human skill of crafting elaborate prompts became unnecessary.
+The AI improved at understanding intent. The human skill of crafting elaborate prompts became unnecessary.
 
 ### 2. The Tools Are Abstracting Away Prompting
 

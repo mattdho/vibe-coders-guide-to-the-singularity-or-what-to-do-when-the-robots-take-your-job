@@ -12,9 +12,9 @@ Then v0.dev started creating entire React components from text descriptions.
 
 Then her company started using Midjourney to generate marketing assets.
 
-Maya's still employed, but her role has fundamentally changed. She went from creating designs to evaluating AI-generated designs. From crafting user experiences to prompting machines to create experiences and then editing the results.
+Maya's still employed, but her role has fundamentally changed. She went from creating designs to evaluating AI-generated designs—from crafting user experiences to prompting machines to create experiences and then editing the results.
 
-Her new job description doesn't say "Designer"—it says "Design Operations Specialist." She makes $95K now.
+Her new job description doesn't say 'Designer'—it says 'Design Operations Specialist.' She makes $95K now.
 
 The thing that hurts most? The AI designs are often better than what she would have created. More on-brand, more conversion-optimized, more aligned with current trends. The machine learned from a million designs; Maya learned from her own experience and a few design blogs.
 
@@ -33,19 +33,19 @@ All of this was true. It was also irrelevant.
 
 **Frank Kowalski's Rude Awakening**: While tech workers debated which coding jobs were safe, Frank had already lived through multiple waves of automation at the automotive parts plant where he'd worked for 23 years. At 54, he thought he'd found the last refuge: quality control inspection.
 
-"You need human eyes and judgment to spot defects," Frank told his wife when the plant installed its first robotic assembly lines. "Machines can build parts, but they can't see what's wrong with them."
+'You need human eyes and judgment to spot defects,' Frank told his wife when the plant installed its first robotic assembly lines. 'Machines can build parts, but they can't see what's wrong with them.'
 
 He was wrong.
 
 In late 2024, the plant installed AI-powered visual inspection systems that could detect microscopic flaws Frank's experienced eyes would miss. The systems worked 24/7 without bathroom breaks, sick days, or workers' compensation claims. They caught defects at rates that made Frank's two-decade track record look sloppy.
 
-Frank's employer offered him retraining as a "quality system technician" to maintain the AI equipment—at 30% less pay and requiring two years of technical education he couldn't afford. At 54, competing with 25-year-olds fresh out of community college felt impossible.
+Frank's employer offered him retraining as a 'quality system technician' to maintain the AI equipment—at 30% less pay and requiring two years of technical education he couldn't afford. At 54, competing with 25-year-olds fresh out of community college felt impossible.
 
-"I've been doing this longer than some of these engineers have been alive," Frank says. "But the machine doesn't care about my experience. It just sees better than I do."
+'I've been doing this longer than some of these engineers have been alive,' Frank says. 'But the machine doesn't care about my experience. It just sees better than I do.'
 
-Frank now works part-time at a hardware store for $15/hour, supplementing his early retirement with odd jobs. His story is playing out in manufacturing plants across the Midwest, where the last "human-only" jobs are disappearing faster than anyone predicted.
+Frank now works part-time at a hardware store for $15/hour, supplementing his early retirement with odd jobs. His story is playing out in manufacturing plants across the Midwest, where the last 'human-only' jobs are disappearing faster than anyone predicted.
 
-The mistake was assuming AI needed to replicate human creativity to replace human creatives. It doesn't. It just needs to create output that's good enough, fast enough, and cheap enough to make human creativity economically unviable.
+The mistake was assuming AI needed to replicate human creativity to replace human creatives. It doesn't. AI just needs to create output that's good enough, fast enough, and cheap enough to make human creativity economically unviable.
 
 Here's what actually happened to "creative" jobs:
 
