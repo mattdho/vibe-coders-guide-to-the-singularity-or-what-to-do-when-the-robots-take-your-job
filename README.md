@@ -158,14 +158,6 @@ CSS Grid and Flexbox for responsive layouts:
 - **Image Optimization**: Lazy loading, modern formats
 - **Font Loading**: `font-display: swap` for faster rendering
 
-## 🤝 Contributing
-
-1. **Fork the repository**
-2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
-3. **Commit changes**: `git commit -m 'Add amazing feature'`
-4. **Push to branch**: `git push origin feature/amazing-feature`
-5. **Open a Pull Request**
-
 ### Development Guidelines
 
 - **CSS**: Use CSS custom properties for theming
@@ -183,17 +175,3 @@ This project is released under the CC0 License - see the [LICENSE](LICENSE) file
 - **Design Inspiration**: VS Code, GitHub Dark theme, cyberpunk aesthetics
 - **Typography**: Google Fonts (Inter, JetBrains Mono)
 - **Icons**: Feather Icons
-- **Content**: The Vibe Coders Collective
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/vibecoders/singularity-guide/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/vibecoders/singularity-guide/discussions)
-- **Email**: hello@vibecoders.dev
-- **Discord**: [Join our community](https://discord.gg/vibecoders)
-
----
-
-**Built with ❤️ and excessive amounts of caffeine by the Vibe Coders Collective**
-
-*"Learn to vibe or learn to code (again) - but this time, do it together."*
