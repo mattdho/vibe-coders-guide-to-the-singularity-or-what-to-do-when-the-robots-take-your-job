@@ -104,6 +104,12 @@ class ContentLoader {
         // Setup lazy loading for images
         this.setupLazyLoading(contentElement);
 
+        // Enhance action items
+        this.enhanceActionItems(contentElement);
+
+        // Enhance notes sections
+        this.enhanceNotesSection(contentElement);
+
         // Announce content change for screen readers
         this.announceContentChange(filename);
     }
@@ -220,6 +226,87 @@ class ContentLoader {
                 }
             });
         }
+    }
+
+    enhanceActionItems(container) {
+        // Find "Your Immediate Action Items" sections and convert to cards
+        const actionSections = container.querySelectorAll('h2, h3');
+        
+        actionSections.forEach(heading => {
+            if (heading.textContent.toLowerCase().includes('action item') || 
+                heading.textContent.toLowerCase().includes('immediate action')) {
+                
+                const nextElement = heading.nextElementSibling;
+                if (nextElement && nextElement.tagName === 'UL') {
+                    this.convertToActionCards(nextElement);
+                }
+            }
+        });
+    }
+
+    convertToActionCards(ulElement) {
+        const items = Array.from(ulElement.querySelectorAll('li'));
+        const cardContainer = document.createElement('div');
+        cardContainer.className = 'action-items-grid';
+        
+        items.forEach((item, index) => {
+            const text = item.innerHTML;
+            const [title, ...descParts] = text.split(':');
+            const description = descParts.join(':').trim();
+            
+            const card = document.createElement('div');
+            card.className = 'action-item-card';
+            card.innerHTML = `
+                <div class="action-number">${index + 1}</div>
+                <div class="action-content">
+                    <h4 class="action-title">${title.replace(/^\*\*|\*\*$/g, '')}</h4>
+                    <p class="action-description">${description}</p>
+                </div>
+                <div class="action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,11 12,14 22,4"></polyline>
+                        <path d="M21,12v7a2,2 0,0,1-2,2H5a2,2 0,0,1-2-2V5a2,2 0,0,1,2-2h11"></path>
+                    </svg>
+                </div>
+            `;
+            
+            cardContainer.appendChild(card);
+        });
+        
+        ulElement.parentNode.replaceChild(cardContainer, ulElement);
+    }
+
+    enhanceNotesSection(container) {
+        // Find Notes sections and enhance them
+        const headings = container.querySelectorAll('h2, h3');
+        
+        headings.forEach(heading => {
+            if (heading.textContent.toLowerCase().includes('notes')) {
+                const notesSection = document.createElement('div');
+                notesSection.className = 'notes-section';
+                
+                // Move the heading and following content into the notes section
+                let nextElement = heading.nextElementSibling;
+                notesSection.appendChild(heading);
+                
+                while (nextElement && !this.isHeading(nextElement)) {
+                    const current = nextElement;
+                    nextElement = nextElement.nextElementSibling;
+                    notesSection.appendChild(current);
+                }
+                
+                // Insert the notes section back into the content
+                if (nextElement) {
+                    nextElement.parentNode.insertBefore(notesSection, nextElement);
+                } else {
+                    container.appendChild(notesSection);
+                }
+            }
+        });
+    }
+
+    isHeading(element) {
+        return element && /^H[1-6]$/.test(element.tagName);
     }
 
     announceContentChange(filename) {

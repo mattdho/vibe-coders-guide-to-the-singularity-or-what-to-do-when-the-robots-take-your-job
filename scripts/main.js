@@ -82,7 +82,10 @@ class VibeCodersApp {
             contentLoader: window.contentLoader,
             navigation: window.navigation,
             themeManager: window.themeManager,
-            markdownParser: window.MarkdownParser
+            markdownParser: window.MarkdownParser,
+            readingControls: window.readingControls,
+            progressTracker: window.progressTracker,
+            swipeNavigation: window.swipeNavigation
         };
 
         // Verify all modules loaded correctly
@@ -131,7 +134,7 @@ class VibeCodersApp {
 
     setupKeyboardShortcuts() {
         document.addEventListener('keydown', (e) => {
-            // Escape key - close modals, menus, etc.
+            // Escape key - close modals, exit reader mode
             if (e.key === 'Escape') {
                 this.handleEscapeKey();
             }
@@ -146,6 +149,34 @@ class VibeCodersApp {
             if ((e.ctrlKey || e.metaKey) && e.key === '/') {
                 e.preventDefault();
                 this.showKeyboardShortcuts();
+            }
+
+            // Arrow keys for navigation
+            if (e.key === 'ArrowLeft' && e.altKey) {
+                e.preventDefault();
+                window.swipeNavigation?.navigatePrevious();
+            }
+
+            if (e.key === 'ArrowRight' && e.altKey) {
+                e.preventDefault();
+                window.swipeNavigation?.navigateNext();
+            }
+
+            // Font size shortcuts
+            if ((e.ctrlKey || e.metaKey) && e.key === '=') {
+                e.preventDefault();
+                window.readingControls?.changeFontSize(10);
+            }
+
+            if ((e.ctrlKey || e.metaKey) && e.key === '-') {
+                e.preventDefault();
+                window.readingControls?.changeFontSize(-10);
+            }
+
+            // Reader mode toggle
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'R') {
+                e.preventDefault();
+                window.readingControls?.toggleReaderMode();
             }
         });
     }
@@ -260,24 +291,38 @@ class VibeCodersApp {
 
     setupPerformanceMonitoring() {
         // Monitor Core Web Vitals
-        if ('web-vital' in window) {
-            // This would integrate with a real performance monitoring service
-            console.log('Performance monitoring initialized');
-        }
-
-        // Monitor long tasks
         if ('PerformanceObserver' in window) {
             try {
-                const observer = new PerformanceObserver((list) => {
+                // Monitor Largest Contentful Paint
+                const lcpObserver = new PerformanceObserver((list) => {
                     for (const entry of list.getEntries()) {
-                        if (entry.duration > 50) {
-                            console.warn('Long task detected:', entry);
+                        console.log('LCP:', entry.startTime);
+                    }
+                });
+                lcpObserver.observe({ type: 'largest-contentful-paint', buffered: true });
+
+                // Monitor Cumulative Layout Shift
+                const clsObserver = new PerformanceObserver((list) => {
+                    for (const entry of list.getEntries()) {
+                        if (!entry.hadRecentInput) {
+                            console.log('CLS:', entry.value);
                         }
                     }
                 });
-                observer.observe({ entryTypes: ['longtask'] });
+                clsObserver.observe({ type: 'layout-shift', buffered: true });
+
+                // Monitor long tasks
+                const longTaskObserver = new PerformanceObserver((list) => {
+                    for (const entry of list.getEntries()) {
+                        if (entry.duration > 50) {
+                            console.warn('Long task detected:', entry.duration + 'ms');
+                        }
+                    }
+                });
+                longTaskObserver.observe({ entryTypes: ['longtask'] });
+
             } catch (e) {
-                // PerformanceObserver not supported
+                console.log('Performance monitoring not fully supported');
             }
         }
     }
